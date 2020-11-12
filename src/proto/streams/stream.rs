@@ -1,7 +1,8 @@
 use super::*;
 
+use wasm_timer::Instant;
+
 use std::task::{Context, Waker};
-use std::time::Instant;
 use std::usize;
 
 /// Tracks Stream related state
