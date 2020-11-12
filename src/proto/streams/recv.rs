@@ -5,10 +5,11 @@ use crate::{frame, proto};
 use std::task::Context;
 
 use http::{HeaderMap, Request, Response};
+use wasm_timer::Instant;
 
 use std::io;
 use std::task::{Poll, Waker};
-use std::time::{Duration, Instant};
+use std::time::Duration;
 
 #[derive(Debug)]
 pub(super) struct Recv {
